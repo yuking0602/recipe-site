@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+  <title>Recipe Site</title>
+  <meta name="description" content="手軽なレシピ共有サイトです">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div id="mainvisual">
+      <h1 class="header-index">Share<br>Recipe.</h1>
+      <img src="img/mainvisual.jpg" alt="料理のイメージ画像です">
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- main -->
+  <main>
+    <!-- recipe-diary -->
+    <section class="recipe-diary scroll-fade-side">
+      <h2 class="section-index">Recipe Diary</h2>
+      <p class="section-content">
+        日々の料理レシピをまとめています。<br>
+        和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br>
+        みなさんの献立にお役立ててくださいね!
+      </p>
+    </section>
+    <!-- /recipe-diary -->
+
+    <!-- recipe -->
+    <section id="recipe">
+      <div class="container">
+        <div class="image-link">
+          <a href="curry.html" class="recipe-link">
+            <img class="recipe-image" src="img/curry.jpg" alt="カレーライス">
+            <p>レシピサイトへ</p>
+          </a>
+        </div>
+        <div class="image-link">
+          <a href="omelette-rice.html" class="recipe-link">
+            <img class="recipe-image" src="img/omelette-rice.jpg" alt="オムライス">
+            <p>レシピサイトへ</p>
+          </a>
+        </div>
+        <div class="image-link">
+          <a href="spaghetti.html" class="recipe-link">
+            <img class="recipe-image" src="img/spaghetti.jpg" alt="スパゲッティ">
+            <p>レシピサイトへ</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /recipe -->
+
+    <!-- about -->
+    <section class="about scroll-fade-side">
+      <h2 class="about-index">Creator</h2>
+      <div class="about-container">
+        <img class="about-image" src="img/about.jpg" alt="顔写真">
+        <div class="features">
+          <dl class="about-list">
+            <dt>name</dt>
+            <dd>ふかたゆうき</dd>
+            <dt>age</dt>
+            <dd>26</dd>
+            <dt>hobby</dt>
+            <dd>
+              <ul class="description-list">
+                <li>名探偵コナン</li>
+                <li>進撃の巨人</li>
+                <li>サイト制作</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- /about -->
+  </main>
+  <!-- /main -->
+
+  <!-- form -->
+  <section id="form-wrapper">
+    <h2 class="contact-index">Contact Form</h2>
+    <form id="form">
+      <div class="input-wrapper">
+        <label class="label" for="name">名前</label>
+        <input class="inputs" type="text" name="name" id="name">
+      </div>
+      <div class="input-wrapper">
+        <label class="label" for="email">メール</label>
+        <input class="inputs" type="email" name="email" id="email">
+      </div>
+      <div class="textarea-wrapper">
+        <label class="label" for="message">お問い合わせ内容</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <div class="btn">
+        <input type="submit" value="送信">
+      </div>
+    </form>
+  </section>
+  <!-- /form -->
+
+  <!-- footer -->
+  <footer id="footer">
+    <small>&copy; 2024 Yuki Fukata</small>
+  </footer>
+  <!-- /footer -->
+
+  <script src="main.js"></script>
+</body>
+</html>
